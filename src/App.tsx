@@ -1,8 +1,11 @@
-const App = () => {
+// Components
+import { Layout } from "./components/Layout.component";
+
+const App = (): JSX.Element => {
   return (
-    <div>
+    <Layout>
       <h1>hi</h1>
-    </div>
+    </Layout>
   );
 };
 
