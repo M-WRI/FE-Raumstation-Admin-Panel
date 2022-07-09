@@ -8,7 +8,7 @@ export const navigationItems: INavigationItems[] = [
   { id: "4", label: "Lösungen", path: "#", icon: "solution_icon" },
   { id: "5", label: "Leistungen", path: "#", icon: "service_icon" },
   { id: "6", label: "Stockwärke", path: "#", icon: "floor_icon" },
-  { id: "7", label: "Dashboard", path: "#", icon: "#" },
-  { id: "8", label: "Dashboard", path: "#", icon: "#" },
-  { id: "9", label: "Dashboard", path: "#", icon: "#" },
+  { id: "7", label: "Konferenzraum", path: "#", icon: "#" },
+  { id: "8", label: "Proberaum", path: "#", icon: "#" },
+  { id: "9", label: "Nachrichten", path: "#", icon: "#" },
 ];
