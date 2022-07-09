@@ -4,6 +4,7 @@ import { navigationItems } from "../data/navigation.data";
 import { INavigationItems } from "../types/navigation.types";
 // Styles
 import styles from "../styles/Navigation.module.scss";
+import { Icon } from "./Icon.component";
 
 export const Navigation = (): JSX.Element => {
   return (
@@ -11,7 +12,10 @@ export const Navigation = (): JSX.Element => {
       <nav>
         <ul>
           {navigationItems.map((item: INavigationItems) => (
-            <li key={item.id}>{item.label}</li>
+            <li key={item.id}>
+              {item.label}
+              <Icon type={item.icon} />
+            </li>
           ))}
         </ul>
       </nav>
