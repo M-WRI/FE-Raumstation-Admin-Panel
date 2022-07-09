@@ -1,11 +1,9 @@
 @import "./global.scss";
 
 .navigationContainer {
-  // background: lightblue;
+  background: lightblue;
 
   .wrapper {
-    width: 4.4rem;
-
     .menuToggle {
       display: flex;
       justify-content: center;
@@ -16,5 +14,13 @@
     .navigationBar {
       padding: 0.75rem;
     }
+  }
+
+  .closeMenu {
+    width: 4.4rem;
+  }
+
+  .openMenu {
+    width: 17.5rem;
   }
 }

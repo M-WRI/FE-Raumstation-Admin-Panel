@@ -10,6 +10,7 @@ export const NavigationItem = ({
   path,
   label,
   icon,
+  isActive,
 }: INavigationItems): JSX.Element => {
   return (
     <li className={styles.navigationItemContainer}>

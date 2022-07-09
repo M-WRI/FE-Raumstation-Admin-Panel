@@ -1,3 +1,4 @@
+import { useState } from "react";
 // Components
 import { NavigationItem } from "./NavigationItem.component";
 // Data
@@ -9,11 +10,23 @@ import styles from "../styles/Navigation.module.scss";
 import { Icon } from "./Icon.component";
 
 export const Navigation = (): JSX.Element => {
+  const [menuState, setMenuState] = useState<boolean>(false);
+
+  const openMenu = () => {
+    setMenuState(!menuState);
+  };
+
   return (
     <aside className={styles.navigationContainer}>
-      <div className={styles.wrapper}>
+      <div
+        className={`${styles.wrapper} ${
+          menuState ? styles.openMenu : styles.closeMenu
+        }`}
+      >
         <header className={styles.menuToggle}>
-          <Icon type="open_toggle_icon" />
+          <div onClick={openMenu}>
+            <Icon type="open_toggle_icon" />
+          </div>
         </header>
         <nav className={styles.navigationBar}>
           <ul>
