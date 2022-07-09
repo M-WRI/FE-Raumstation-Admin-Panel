@@ -1,0 +1,21 @@
+@import "./global.scss";
+
+.navigationItemContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  margin: 0.25rem 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+
+  &:hover {
+    background: $grey-100;
+  }
+
+  .navigationLabel {
+    overflow: hidden;
+    font-family: $text-font;
+    width: 0;
+  }
+}
