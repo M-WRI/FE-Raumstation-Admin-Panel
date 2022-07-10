@@ -1,12 +1,12 @@
 {
   "id": "1",
   "role": "admin",
-  "profile_image": "",
+  "profile_image": null,
   "first_name": "Moritz",
   "last_name": "Wright",
   "email": "me@moritzwright.com",
-  "floor": "4",
-  "seat": "1",
+  "floor": 4,
+  "seat": 1,
 
   "company_details": {
     "id": "1",
