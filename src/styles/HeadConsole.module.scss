@@ -1,0 +1,31 @@
+@import "./global.scss";
+
+.headConsoleContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 4.625rem;
+  z-index: 9;
+  border-bottom: 1px solid $grey-100;
+
+  .wrapper {
+    height: 4rem;
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+
+    .logoContainer {
+      display: flex;
+      align-items: center;
+
+      .border {
+        transform: translateX(2px);
+        border-radius: $button-radius;
+        height: 1.5rem;
+        width: 2px;
+        background: $grey-100;
+        margin: 0 0 0 1rem;
+      }
+    }
+  }
+}

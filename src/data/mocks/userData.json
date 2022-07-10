@@ -1,0 +1,17 @@
+{
+  "id": "1",
+  "role": "admin",
+  "profile_image": "",
+  "first_name": "Moritz",
+  "last_name": "Wright",
+  "email": "me@moritzwright.com",
+  "floor": "4",
+  "seat": "1",
+
+  "company_details": {
+    "id": "1",
+    "company_name": "Hemd & Fliege",
+    "description": "Die beste Firma der Welt, wir wechseln Reifen und können sogar ein bisschen programmieren. Umzüge? Kein Problem.",
+    "industry": "IT"
+  }
+}
