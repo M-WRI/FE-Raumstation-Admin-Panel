@@ -15,6 +15,7 @@ import bandRoom from "../img/icons/band_room_icon.svg";
 import conference from "../img/icons/conference_icon.svg";
 import message from "../img/icons/message_icon.svg";
 import openToggle from "../img/icons/open_toggle_icon.svg";
+import astronaut from "../img/icons/astronaut_icon.svg";
 
 export const Icon = ({ type }: IIconProps): JSX.Element => {
   const iconSwitch = (type: TIconType) => {
@@ -39,6 +40,8 @@ export const Icon = ({ type }: IIconProps): JSX.Element => {
         return conference;
       case "message_icon":
         return message;
+      case "astronaut_icon":
+        return astronaut;
       default:
         return user;
     }

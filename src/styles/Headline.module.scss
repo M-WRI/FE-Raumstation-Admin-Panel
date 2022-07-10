@@ -1,0 +1,19 @@
+@import "./global.scss";
+
+.mainHead {
+  font-family: $headline-font;
+  font-size: $main-head;
+  font-weight: 600;
+}
+
+.secondaryHead {
+  font-family: $headline-font;
+  font-size: $secondary-head;
+  font-weight: 600;
+}
+
+.tertiaryHead {
+  font-family: $headline-font;
+  font-size: $tertiary-head;
+  font-weight: 600;
+}

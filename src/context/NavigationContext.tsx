@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-import { navigationItems } from "../data/navigation.data";
+import { navigationItems } from "../api/navigation.data";
 import {
   INavigationContext,
   INavigationProviderProps,

@@ -1,7 +1,11 @@
 @import "./global.scss";
 
 .navigationContainer {
-  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
   border-right: 1px solid $grey-100;
 
   .wrapper {
@@ -22,5 +26,9 @@
 
   .openMenu {
     width: 17.5rem;
+
+    .menuToggle {
+      justify-content: flex-end;
+    }
   }
 }

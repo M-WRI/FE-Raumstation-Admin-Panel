@@ -1,0 +1,27 @@
+@import "./global.scss";
+
+.buttonLarge {
+  height: 2.5rem;
+  padding: 0 1rem;
+  border-radius: $button-radius;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background: $grey-100;
+  }
+}
+
+.buttonSmall {
+  height: 2rem;
+  padding: 0 0.75rem;
+  border-radius: $button-radius;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background: $grey-100;
+  }
+}

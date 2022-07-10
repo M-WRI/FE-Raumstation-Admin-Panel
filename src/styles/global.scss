@@ -6,6 +6,12 @@
 $navigation-font: "Quicksand", sans-serif;
 $text-font: "Quicksand", sans-serif;
 $headline-font: "Montserrat", sans-serif;
+// =============
+// FONT SIZES
+// =============
+$main-head: 2.25rem;
+$secondary-head: 1rem;
+$tertiary-head: 0.875rem;
 // ======
 // COLORS
 // ======
@@ -13,6 +19,10 @@ $signal-color: #2cda9d;
 $white: #f6f4f5;
 $black: #191917;
 $grey-100: #eee;
+// ======
+// BUTTON
+// ======
+$button-radius: 0.5rem;
 
 * {
   margin: 0;
