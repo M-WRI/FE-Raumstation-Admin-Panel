@@ -1,7 +1,7 @@
 // Components
 import { Icon } from "./Icon.component";
 // Types
-import { INavigationItems } from "../types/navigation.types";
+import { NavigationItemProps } from "../types/navigation.types";
 // Styles
 import styles from "../styles/NavigationItem.module.scss";
 
@@ -11,9 +11,16 @@ export const NavigationItem = ({
   label,
   icon,
   isActive,
-}: INavigationItems): JSX.Element => {
+  setActive,
+  isOpen,
+}: NavigationItemProps): JSX.Element => {
   return (
-    <li className={styles.navigationItemContainer}>
+    <li
+      className={`${styles.navigationItemContainer} ${
+        isActive && styles.active
+      } ${isOpen ? styles.openMenu : styles.closeMenu}`}
+      onClick={() => setActive(id)}
+    >
       <Icon type={icon} />
       <span className={styles.navigationLabel}>{label}</span>
     </li>

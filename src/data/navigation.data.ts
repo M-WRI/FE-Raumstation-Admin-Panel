@@ -1,7 +1,7 @@
 // Types
-import { INavigationItems } from "../types/navigation.types";
+import { INavigationItem } from "../types/navigation.types";
 
-export const navigationItems: INavigationItems[] = [
+export const navigationItems: INavigationItem[] = [
   {
     id: "1",
     label: "Dashboard",

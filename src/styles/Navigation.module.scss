@@ -1,12 +1,12 @@
 @import "./global.scss";
 
 .navigationContainer {
-  background: lightblue;
+  height: 100%;
+  border-right: 1px solid $grey-100;
 
   .wrapper {
     .menuToggle {
       display: flex;
-      justify-content: center;
       padding: 1.25rem 1.5rem 0.75rem;
       min-height: 6.25rem;
     }

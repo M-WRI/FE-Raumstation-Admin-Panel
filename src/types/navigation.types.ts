@@ -1,6 +1,6 @@
 import { TIconType } from "./icon.types";
 
-export interface INavigationItems {
+export interface INavigationItem {
   id: string;
   label: string;
   path: string;
@@ -8,16 +8,16 @@ export interface INavigationItems {
   isActive: boolean;
 }
 
-export interface INavigation {
-  isNavbarOpen: boolean;
-  navigationItems: INavigationItems[];
-}
-
 export interface INavigationContext {
-  navigation: INavigation;
-  setNavigation: (data: INavigation) => void;
+  navigation: INavigationItem[];
+  setNavigation: (data: INavigationItem[]) => void;
 }
 
-export interface IProviderChildren {
+export interface INavigationProviderProps {
   children: JSX.Element;
+}
+
+export interface NavigationItemProps extends INavigationItem {
+  setActive: (id: string) => void;
+  isOpen?: boolean;
 }

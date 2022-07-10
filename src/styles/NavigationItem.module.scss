@@ -8,21 +8,31 @@
   border-radius: 0.5rem;
   cursor: pointer;
 
-  &:hover {
-    background: $grey-100;
-  }
-
   .navigationLabel {
     overflow: hidden;
     font-family: $text-font;
     width: 0;
   }
 
-  .openMenu {
-    justify-content: flex-start;
+  &:hover {
+    background: $grey-100;
   }
 
-  .closeMenu {
+  &.active {
+    background: $signal-color;
+  }
+
+  &.closeMenu {
     justify-content: center;
+  }
+
+  &.openMenu {
+    justify-content: flex-start;
+    padding-left: 0.7rem;
+
+    .navigationLabel {
+      width: 100%;
+      padding-left: 0.5rem;
+    }
   }
 }

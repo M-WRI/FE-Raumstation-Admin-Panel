@@ -1,26 +1,37 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 // Components
+import { Icon } from "./Icon.component";
 import { NavigationItem } from "./NavigationItem.component";
-// Data
-import { navigationItems } from "../data/navigation.data";
+import { NavigationContext } from "../context/NavigationContext";
 // Types
-import { INavigationItems } from "../types/navigation.types";
+import { INavigationItem } from "../types/navigation.types";
 // Styles
 import styles from "../styles/Navigation.module.scss";
-import { Icon } from "./Icon.component";
 
 export const Navigation = (): JSX.Element => {
-  const [menuState, setMenuState] = useState<boolean>(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const { navigation, setNavigation } = useContext(NavigationContext);
 
   const openMenu = () => {
-    setMenuState(!menuState);
+    setIsOpen(!isOpen);
+  };
+
+  const setItemActive = (id: string) => {
+    const newState = navigation.map((obj) => {
+      if (obj.id === id) {
+        return { ...obj, isActive: true };
+      }
+      return { ...obj, isActive: false };
+    });
+
+    setNavigation(newState);
   };
 
   return (
     <aside className={styles.navigationContainer}>
       <div
         className={`${styles.wrapper} ${
-          menuState ? styles.openMenu : styles.closeMenu
+          isOpen ? styles.openMenu : styles.closeMenu
         }`}
       >
         <header className={styles.menuToggle}>
@@ -30,8 +41,13 @@ export const Navigation = (): JSX.Element => {
         </header>
         <nav className={styles.navigationBar}>
           <ul>
-            {navigationItems.map((item: INavigationItems) => (
-              <NavigationItem {...item} />
+            {navigation.map((item: INavigationItem) => (
+              <NavigationItem
+                key={item.id}
+                {...item}
+                setActive={setItemActive}
+                isOpen={isOpen}
+              />
             ))}
           </ul>
         </nav>
