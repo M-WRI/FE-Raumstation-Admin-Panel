@@ -1,5 +1,6 @@
 export interface IButtonProps {
-  children: JSX.Element | string;
-  type: string;
+  children?: JSX.Element | undefined;
   signal?: boolean;
+  type: string;
+  text: string;
 }

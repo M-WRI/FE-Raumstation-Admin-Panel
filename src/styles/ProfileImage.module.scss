@@ -1,0 +1,24 @@
+@import "./global.scss";
+
+.profileImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background: $grey-200;
+}
+
+.small {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.medium {
+  height: 4rem;
+  width: 4rem;
+}
+
+.large {
+  height: 6rem;
+  width: 6rem;
+}

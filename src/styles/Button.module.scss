@@ -1,12 +1,21 @@
 @import "./global.scss";
 
-.buttonLarge {
-  height: 2.5rem;
-  padding: 0 1rem;
+.buttonBase {
+  display: flex;
+  align-items: center;
   border-radius: $button-radius;
   background: none;
   border: none;
   cursor: pointer;
+
+  .buttonChildren {
+    margin-right: 0.5rem;
+  }
+}
+
+.buttonLarge {
+  height: 2.5rem;
+  padding: 0 1rem;
 
   &:hover {
     background: $grey-100;
@@ -16,10 +25,6 @@
 .buttonSmall {
   height: 2rem;
   padding: 0 0.75rem;
-  border-radius: $button-radius;
-  background: none;
-  border: none;
-  cursor: pointer;
 
   &:hover {
     background: $grey-100;

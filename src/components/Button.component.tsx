@@ -7,32 +7,37 @@ export const Button = ({
   children,
   type = "S",
   signal = false,
+  text,
 }: IButtonProps) => {
   const buttonSwitch = (
-    children: JSX.Element | string,
+    children: JSX.Element | undefined,
     type: string,
-    signal: boolean
+    signal: boolean,
+    text: string
   ) => {
     switch (type) {
       case "L":
         return (
-          <button className={`${styles.buttonLarge}`}>
-            <Headline type="h2">{children}</Headline>
+          <button className={`${styles.buttonBase} ${styles.buttonLarge}`}>
+            <div className={styles.buttonChildren}>{children}</div>
+            <Headline type="h2">{text}</Headline>
           </button>
         );
       case "S":
         return (
-          <button className={`${styles.buttonSmall}`}>
-            <Headline type="h3">{children}</Headline>
+          <button className={`${styles.buttonBase} ${styles.buttonSmall}`}>
+            <div className={styles.buttonChildren}>{children}</div>
+            <Headline type="h3">{text}</Headline>
           </button>
         );
       default:
         return (
-          <button className={`${styles.buttonSmall}`}>
-            <Headline type="h3">{children}</Headline>
+          <button className={`${styles.buttonBase} ${styles.buttonSmall}`}>
+            <div className={styles.buttonChildren}>{children}</div>
+            <Headline type="h3">{text}</Headline>
           </button>
         );
     }
   };
-  return buttonSwitch(children, type, signal);
+  return buttonSwitch(children, type, signal, text);
 };
