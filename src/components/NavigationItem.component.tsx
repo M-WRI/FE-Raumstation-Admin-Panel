@@ -4,6 +4,7 @@ import { Icon } from "./Icon.component";
 import { NavigationItemProps } from "../types/navigation.types";
 // Styles
 import styles from "../styles/NavigationItem.module.scss";
+import { Link } from "react-router-dom";
 
 export const NavigationItem = ({
   id,
@@ -15,14 +16,16 @@ export const NavigationItem = ({
   isOpen,
 }: NavigationItemProps): JSX.Element => {
   return (
-    <li
-      className={`${styles.navigationItemContainer} ${
-        isActive && styles.active
-      } ${isOpen ? styles.openMenu : styles.closeMenu}`}
-      onClick={() => setActive(id)}
-    >
-      <Icon type={icon} />
-      <span className={styles.navigationLabel}>{label}</span>
-    </li>
+    <Link to={path}>
+      <li
+        className={`${styles.navigationItemContainer} ${
+          isActive && styles.active
+        } ${isOpen ? styles.openMenu : styles.closeMenu}`}
+        onClick={() => setActive(id)}
+      >
+        <Icon type={icon} />
+        <span className={styles.navigationLabel}>{label}</span>
+      </li>
+    </Link>
   );
 };
