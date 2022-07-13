@@ -5,7 +5,7 @@ export const navigationItems: INavigationItem[] = [
   {
     id: "1",
     label: "Dashboard",
-    path: "#",
+    path: "dashboard",
     icon: "dashboard_icon",
     isActive: true,
   },
