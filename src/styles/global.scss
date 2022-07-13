@@ -24,7 +24,11 @@ $grey-200: #ddd;
 // ======
 // BUTTON
 // ======
-$button-radius: 0.5rem;
+$border-radius: 0.5rem;
+// ==========
+// BOX SHADOW
+// ==========
+$box-shadow-s: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
 
 * {
   margin: 0;

@@ -1,4 +1,4 @@
 export interface IProfileImageProps {
-  image?: string;
+  image?: string | null;
   type: string;
 }

@@ -4,7 +4,7 @@ export const UserSerializer = (res: IUserResponse): IUser => {
   return {
     id: res.id,
     role: res.role,
-    profileImage: res.profile_image,
+    profileImage: res.profile_image ? res.profile_image : null,
     firstName: res.first_name,
     lastName: res.last_name,
     email: res.email,
