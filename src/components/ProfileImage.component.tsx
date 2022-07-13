@@ -7,7 +7,7 @@ import { IProfileImageProps } from "../types/ProfileImage.types";
 // STYLES
 import styles from "../styles/ProfileImage.module.scss";
 
-export const ProfileImage = ({ image, type }: IProfileImageProps) => {
+export const ProfileImage = ({ image = "", type }: IProfileImageProps) => {
   const user = useSelector((state: RootState) => state.user);
 
   const typeSwitch = (type: string) => {
@@ -21,10 +21,12 @@ export const ProfileImage = ({ image, type }: IProfileImageProps) => {
     }
   };
 
+  console.log(image, "<--");
+
   return (
     <div className={`${styles.profileImageContainer} ${typeSwitch(type)}`}>
-      {user.profileImage ? (
-        <img src={image} alt={user.firstName} />
+      {!user.profileImage ? (
+        <img alt={user.firstName} />
       ) : (
         <Headline type="h2">
           {`${user.firstName.charAt(0)}${user.lastName.charAt(0)}`}
