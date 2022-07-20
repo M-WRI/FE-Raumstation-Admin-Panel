@@ -1,0 +1,7 @@
+.infoContainer {
+  display: flex;
+
+  & > p {
+    margin-right: 0.375rem;
+  }
+}

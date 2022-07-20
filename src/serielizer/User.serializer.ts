@@ -17,5 +17,7 @@ export const UserSerializer = (res: IUserResponse): IUser => {
       description: res.company_details.description,
       industry: res.company_details.industry,
     },
+
+    bookingList: res.booking_list,
   };
 };
