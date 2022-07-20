@@ -25,8 +25,10 @@ export interface IUserResponse {
   first_name: string;
   last_name: string;
   email: string;
-  floor: number;
-  seat: number;
+  position: {
+    floor: string;
+    seat: string;
+  };
 
   company_details: ICompanyDetailsResponse;
 
@@ -47,8 +49,10 @@ export interface IUser {
   firstName: string;
   lastName: string;
   email: string;
-  floor: number;
-  seat: number;
+  position: {
+    floor: string;
+    seat: string;
+  };
 
   companyDetails: ICompanyDetails;
 

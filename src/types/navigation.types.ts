@@ -14,7 +14,7 @@ export interface INavigationContext {
 }
 
 export interface INavigationProviderProps {
-  children: JSX.Element;
+  children: JSX.Element | JSX.Element[];
 }
 
 export interface NavigationItemProps extends INavigationItem {

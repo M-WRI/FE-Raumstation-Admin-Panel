@@ -5,8 +5,7 @@
   "first_name": "Moritz",
   "last_name": "Wright",
   "email": "me@moritzwright.com",
-  "floor": 4,
-  "seat": 1,
+  "position": { "floor": "4", "seat": "1" },
 
   "company_details": {
     "id": "1",

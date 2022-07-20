@@ -1,0 +1,26 @@
+@import "./global.scss";
+
+.cardContainer {
+  @include profileCard;
+
+  .profileImageWrapper {
+    margin: 1rem 0;
+  }
+
+  .headlineWrapper {
+    margin-bottom: 0.375rem;
+  }
+
+  .informationContainer {
+    & > p {
+      margin-bottom: 0.375rem;
+    }
+
+    .industryWrapper {
+      display: flex;
+      & > p {
+        margin-right: 0.375rem;
+      }
+    }
+  }
+}

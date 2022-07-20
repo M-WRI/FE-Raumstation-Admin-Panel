@@ -11,10 +11,8 @@ export const Layout = ({ children }: ILayoutProps): JSX.Element => {
   return (
     <div className={styles.layoutContainer}>
       <NavigationProvider>
-        <>
-          <HeadConsole />
-          <Navigation />
-        </>
+        <HeadConsole />
+        <Navigation />
       </NavigationProvider>
       <ViewContainer>{children}</ViewContainer>
     </div>

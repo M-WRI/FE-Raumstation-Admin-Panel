@@ -8,8 +8,10 @@ export const UserSerializer = (res: IUserResponse): IUser => {
     firstName: res.first_name,
     lastName: res.last_name,
     email: res.email,
-    floor: res.floor,
-    seat: res.seat,
+    position: {
+      floor: res.position.floor,
+      seat: res.position.seat,
+    },
 
     companyDetails: {
       id: res.company_details.id,

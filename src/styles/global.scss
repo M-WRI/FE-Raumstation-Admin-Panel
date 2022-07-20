@@ -29,6 +29,14 @@ $border-radius: 0.5rem;
 // BOX SHADOW
 // ==========
 $box-shadow-s: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+//
+@mixin profileCard {
+  padding: 1.5rem;
+  width: 100%;
+  box-shadow: $box-shadow-s;
+  border-radius: $border-radius;
+  background: $white-100;
+}
 
 * {
   margin: 0;
