@@ -1,12 +1,10 @@
+@import "./global.scss";
+
 .container {
-  width: 100%;
-  max-width: 920px;
-  padding-right: 0.75rem;
-  padding-left: 0.75rem;
-  margin-right: auto;
-  margin-left: auto;
+  @include viewContainer;
 
   .userInformationContainer {
+    margin-top: 1rem;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);

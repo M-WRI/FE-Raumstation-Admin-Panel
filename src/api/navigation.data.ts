@@ -10,7 +10,13 @@ export const navigationItems: INavigationItem[] = [
     isActive: true,
   },
   { id: "2", label: "User", path: "#", icon: "user_icon", isActive: false },
-  { id: "3", label: "Blog", path: "#", icon: "blog_icon", isActive: false },
+  {
+    id: "3",
+    label: "Blog",
+    path: "blog-posts",
+    icon: "blog_icon",
+    isActive: false,
+  },
   {
     id: "4",
     label: "Lösungen",

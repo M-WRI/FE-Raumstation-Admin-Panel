@@ -1,7 +1,7 @@
 @import "./global.scss";
 
 .cardContainer {
-  @include profileCard;
+  @include card;
 
   .profileImageWrapper {
     margin: 1rem 0;

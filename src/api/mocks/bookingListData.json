@@ -1,0 +1,48 @@
+{
+  "booking_list": [
+    {
+      "id": "1",
+      "user": "1",
+      "type": "conference_room_1",
+      "date": "07-20-2022",
+      "name": "Moritz Wright",
+      "time": {
+        "from": "13:00",
+        "to": "14:00"
+      }
+    },
+    {
+      "id": "2",
+      "user": "1",
+      "type": "conference_room_2",
+      "date": "07-22-2022",
+      "name": "Moritz Wright",
+      "time": {
+        "from": "17:00",
+        "to": "18:00"
+      }
+    },
+    {
+      "id": "3",
+      "user": "1",
+      "type": "band_room",
+      "date": "07-24-2022",
+      "name": "Moritz Wright",
+      "time": {
+        "from": "12:00",
+        "to": "13:00"
+      }
+    },
+    {
+      "id": "4",
+      "user": "1",
+      "type": "conference_room_1",
+      "date": "07-26-2022",
+      "name": "Moritz Wright",
+      "time": {
+        "from": "09:00",
+        "to": "10:00"
+      }
+    }
+  ]
+}

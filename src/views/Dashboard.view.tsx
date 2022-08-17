@@ -4,8 +4,6 @@ import { RootState } from "../store/store";
 import { Headline } from "../components/Headline.component";
 import { UserProfileCard } from "../components/UserProfileCard";
 import { CompanyProfileCard } from "../components/CompanyProfileCard";
-// import { Calendar } from "../components/Calendar.component";
-// import { DatePicker } from "../components/DatePicker.component";
 // STYLES
 import styles from "../styles/Dashboard.module.scss";
 
