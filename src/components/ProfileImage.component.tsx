@@ -21,12 +21,10 @@ export const ProfileImage = ({ image = "", type }: IProfileImageProps) => {
     }
   };
 
-  console.log(image, "<--");
-
   return (
     <div className={`${styles.profileImageContainer} ${typeSwitch(type)}`}>
-      {!user.profileImage ? (
-        <img alt={user.firstName} />
+      {image ? (
+        <img src={image} alt={user.firstName} />
       ) : (
         <Headline type="h2">
           {`${user.firstName.charAt(0)}${user.lastName.charAt(0)}`}

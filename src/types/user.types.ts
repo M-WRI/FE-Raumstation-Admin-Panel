@@ -5,6 +5,19 @@ export interface ICompanyDetailsResponse {
   industry: string;
 }
 
+export interface IBookingListTime {
+  from: string;
+  to: string;
+}
+
+export interface IBookingList {
+  id: string;
+  type: string;
+  date: string;
+  name: string;
+  time: IBookingListTime;
+}
+
 export interface IUserResponse {
   id: string;
   role: string;
@@ -12,10 +25,14 @@ export interface IUserResponse {
   first_name: string;
   last_name: string;
   email: string;
-  floor: number;
-  seat: number;
+  position: {
+    floor: string;
+    seat: string;
+  };
 
   company_details: ICompanyDetailsResponse;
+
+  booking_list: IBookingList[];
 }
 
 export interface ICompanyDetails {
@@ -32,8 +49,12 @@ export interface IUser {
   firstName: string;
   lastName: string;
   email: string;
-  floor: number;
-  seat: number;
+  position: {
+    floor: string;
+    seat: string;
+  };
 
   companyDetails: ICompanyDetails;
+
+  bookingList: IBookingList[];
 }

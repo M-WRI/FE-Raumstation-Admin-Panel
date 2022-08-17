@@ -4,12 +4,14 @@ export const UserSerializer = (res: IUserResponse): IUser => {
   return {
     id: res.id,
     role: res.role,
-    profileImage: res.profile_image,
+    profileImage: res.profile_image ? res.profile_image : null,
     firstName: res.first_name,
     lastName: res.last_name,
     email: res.email,
-    floor: res.floor,
-    seat: res.seat,
+    position: {
+      floor: res.position.floor,
+      seat: res.position.seat,
+    },
 
     companyDetails: {
       id: res.company_details.id,
@@ -17,5 +19,7 @@ export const UserSerializer = (res: IUserResponse): IUser => {
       description: res.company_details.description,
       industry: res.company_details.industry,
     },
+
+    bookingList: res.booking_list,
   };
 };

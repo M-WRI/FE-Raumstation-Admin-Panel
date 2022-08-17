@@ -1,22 +1,8 @@
 {
-  "id": "1",
-  "role": "admin",
-  "profile_image": "https://images.pexels.com/photos/842980/pexels-photo-842980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-  "first_name": "Moritz",
-  "last_name": "Wright",
-  "email": "me@moritzwright.com",
-  "position": { "floor": "4", "seat": "1" },
-
-  "company_details": {
-    "id": "1",
-    "company_name": "Hemd & Fliege",
-    "description": "Die beste Firma der Welt, wir wechseln Reifen und können sogar ein bisschen programmieren. Umzüge? Kein Problem.",
-    "industry": "IT"
-  },
-
   "booking_list": [
     {
       "id": "1",
+      "user": "1",
       "type": "conference_room_1",
       "date": "07-20-2022",
       "name": "Moritz Wright",
@@ -27,6 +13,7 @@
     },
     {
       "id": "2",
+      "user": "1",
       "type": "conference_room_2",
       "date": "07-22-2022",
       "name": "Moritz Wright",
@@ -37,6 +24,7 @@
     },
     {
       "id": "3",
+      "user": "1",
       "type": "band_room",
       "date": "07-24-2022",
       "name": "Moritz Wright",
@@ -47,6 +35,7 @@
     },
     {
       "id": "4",
+      "user": "1",
       "type": "conference_room_1",
       "date": "07-26-2022",
       "name": "Moritz Wright",

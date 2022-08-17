@@ -24,7 +24,34 @@ $grey-200: #ddd;
 // ======
 // BUTTON
 // ======
-$button-radius: 0.5rem;
+$border-radius: 0.5rem;
+// ==========
+// BOX SHADOW
+// ==========
+$box-shadow-s: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+// MIXINs
+@mixin viewContainer {
+  width: 100%;
+  max-width: 920px;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin card {
+  padding: 1.5rem;
+  width: 100%;
+  box-shadow: $box-shadow-s;
+  border-radius: $border-radius;
+  background: $white-100;
+}
+
+@mixin tertiary-head {
+  font-family: $headline-font;
+  font-size: $tertiary-head;
+  color: $black;
+}
 
 * {
   margin: 0;
