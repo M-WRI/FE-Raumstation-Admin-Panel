@@ -1,6 +1,6 @@
 // DATA
 import data from "../api/mocks/blockPosts.json";
-import { BlockPostCard } from "../components/BlockPostCard.component";
+import { BlockPostCard } from "../components/BlogPostCard.component";
 // STYLES
 import styles from "../styles/BlogPosts.module.scss";
 

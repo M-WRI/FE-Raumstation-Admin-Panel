@@ -14,4 +14,6 @@ export type TIconType =
   | "message_icon"
   | "toggle"
   | "open_toggle_icon"
-  | "astronaut_icon";
+  | "astronaut_icon"
+  | "delete_icon"
+  | "edit_icon";

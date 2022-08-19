@@ -2,6 +2,7 @@
 
 .container {
   @include card;
+  cursor: pointer;
 
   .seperator {
     width: 40px;
