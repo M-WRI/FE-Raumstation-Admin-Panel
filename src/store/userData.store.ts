@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-// import type { PayloadAction } from "@reduxjs/toolkit";
 // Components
 import { UserSerializer } from "../serielizer/User.serializer";
 // DATA
