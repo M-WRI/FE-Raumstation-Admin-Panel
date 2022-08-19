@@ -13,13 +13,6 @@ export const UserSerializer = (res: IUserResponse): IUser => {
       seat: res.position.seat,
     },
 
-    companyDetails: {
-      id: res.company_details.id,
-      companyName: res.company_details.company_name,
-      description: res.company_details.description,
-      industry: res.company_details.industry,
-    },
-
     bookingList: res.booking_list,
   };
 };

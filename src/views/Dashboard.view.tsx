@@ -9,6 +9,7 @@ import styles from "../styles/Dashboard.module.scss";
 
 export const Dashboard = (): JSX.Element => {
   const user = useSelector((state: RootState) => state.user);
+  const company = useSelector((state: RootState) => state.company);
 
   return (
     <div className={styles.container}>
@@ -20,9 +21,9 @@ export const Dashboard = (): JSX.Element => {
           position={user.position}
         />
         <CompanyProfileCard
-          companyName={user.companyDetails.companyName}
-          description={user.companyDetails.description}
-          industry={user.companyDetails.industry}
+          companyName={company.companyName}
+          description={company.description}
+          industry={company.industry}
         />
       </div>
     </div>
