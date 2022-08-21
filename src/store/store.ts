@@ -2,11 +2,13 @@ import { configureStore } from "@reduxjs/toolkit";
 // STORES
 import user from "./userData.store";
 import company from "./companyData.store";
+import userList from "./userList.store";
 
 export const store = configureStore({
   reducer: {
     user: user,
     company: company,
+    userList: userList,
   },
 });
 

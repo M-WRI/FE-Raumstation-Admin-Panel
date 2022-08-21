@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "role": "admin",
+    "profile_image": "https://images.pexels.com/photos/842980/pexels-photo-842980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "first_name": "Moritz",
+    "last_name": "Wright",
+    "email": "me@moritzwright.com",
+    "position": { "floor": "4", "seat": "1" }
+  },
+  {
+    "id": "2",
+    "role": "admin",
+    "profile_image": "https://images.pexels.com/photos/842980/pexels-photo-842980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "first_name": "Moritz",
+    "last_name": "Wright",
+    "email": "me@moritzwright.com",
+    "position": { "floor": "4", "seat": "1" }
+  },
+  {
+    "id": "3",
+    "role": "admin",
+    "profile_image": "https://images.pexels.com/photos/842980/pexels-photo-842980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "first_name": "Moritz",
+    "last_name": "Wright",
+    "email": "me@moritzwright.com",
+    "position": { "floor": "4", "seat": "1" }
+  },
+  {
+    "id": "4",
+    "role": "admin",
+    "profile_image": "https://images.pexels.com/photos/842980/pexels-photo-842980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "first_name": "Moritz",
+    "last_name": "Wright",
+    "email": "me@moritzwright.com",
+    "position": { "floor": "4", "seat": "1" }
+  }
+]

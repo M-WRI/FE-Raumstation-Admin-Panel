@@ -1,5 +1,6 @@
 // COMPONENTS
 import { Headline } from "./Headline.component";
+import { Card } from "./Card.component";
 import { Text } from "./Text.component";
 import { ProfileImage } from "./ProfileImage.component";
 // TYPES
@@ -13,7 +14,7 @@ export const UserProfileCard = ({
   position,
 }: IProfileCardProps) => {
   return (
-    <div className={styles.cardContainer}>
+    <Card>
       <Headline type="h3">User:</Headline>
       <div className={styles.profileImageWrapper}>
         <ProfileImage type="L" />
@@ -34,6 +35,6 @@ export const UserProfileCard = ({
           </div>
         </div>
       </div>
-    </div>
+    </Card>
   );
 };

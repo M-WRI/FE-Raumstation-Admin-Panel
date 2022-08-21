@@ -9,7 +9,7 @@ export const navigationItems: INavigationItem[] = [
     icon: "dashboard_icon",
     isActive: true,
   },
-  { id: "2", label: "User", path: "#", icon: "user_icon", isActive: false },
+  { id: "2", label: "User", path: "users", icon: "user_icon", isActive: false },
   {
     id: "3",
     label: "Blog",

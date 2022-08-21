@@ -1,5 +1,6 @@
 // COMPONENTS
 import { Headline } from "./Headline.component";
+import { Card } from "./Card.component";
 import { Text } from "./Text.component";
 import { ProfileImage } from "./ProfileImage.component";
 // TYPES
@@ -13,7 +14,7 @@ export const CompanyProfileCard = ({
   industry,
 }: ICompanyCardProps) => {
   return (
-    <div className={styles.cardContainer}>
+    <Card>
       <Headline type="h3">Company:</Headline>
       <div className={styles.profileImageWrapper}>
         <ProfileImage type="L" />
@@ -28,6 +29,6 @@ export const CompanyProfileCard = ({
           <Text strong>{industry}</Text>
         </div>
       </div>
-    </div>
+    </Card>
   );
 };

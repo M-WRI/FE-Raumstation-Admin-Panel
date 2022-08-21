@@ -22,8 +22,6 @@ export interface IUserResponse {
     floor: string;
     seat: string;
   };
-
-  booking_list: IBookingList[];
 }
 
 export interface IUser {
@@ -37,6 +35,4 @@ export interface IUser {
     floor: string;
     seat: string;
   };
-
-  bookingList: IBookingList[];
 }

@@ -1,24 +1,20 @@
 @import "./global.scss";
 
-.cardContainer {
-  @include card;
+.profileImageWrapper {
+  margin: 1rem 0;
+}
 
-  .profileImageWrapper {
-    margin: 1rem 0;
-  }
+.headlineWrapper {
+  margin-bottom: 0.375rem;
+}
 
-  .headlineWrapper {
-    margin-bottom: 0.375rem;
-  }
+.positionInfoContainer {
+  display: flex;
 
-  .positionInfoContainer {
+  .positionWrapper {
     display: flex;
-
-    .positionWrapper {
-      display: flex;
-      & > p {
-        margin-right: 0.375rem;
-      }
+    & > p {
+      margin-right: 0.375rem;
     }
   }
 }
