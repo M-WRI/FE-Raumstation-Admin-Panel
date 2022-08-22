@@ -1,0 +1,18 @@
+@import "./global.scss";
+
+.container {
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 2fr 5fr 3fr 2fr 2fr 1fr;
+  grid-gap: 1rem;
+  align-items: center;
+  justify-items: center;
+
+  .name,
+  .email,
+  .position,
+  .role {
+    font-size: $text-font;
+    font-family: $text-font;
+  }
+}

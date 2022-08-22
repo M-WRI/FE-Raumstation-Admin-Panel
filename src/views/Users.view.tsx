@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 import { RootState } from "../store/store";
 // COMPONENTS
 import { UserListItem } from "../components/UserListItem.component";
+import { Button } from "../components/Button.component";
 // STYLES
 import styles from "../styles/Users.module.scss";
 
@@ -10,9 +11,12 @@ export const Users = (): JSX.Element => {
 
   return (
     <div className={styles.container}>
-      {userList.map((user: any) => (
-        <UserListItem key={user.id} {...user} />
-      ))}
+      <Button type="L" text="Create New User" signal />
+      <div className={styles.userListContainer}>
+        {userList.map((user: any) => (
+          <UserListItem key={user.id} {...user} />
+        ))}
+      </div>
     </div>
   );
 };

@@ -3,6 +3,11 @@
 .container {
   @include viewContainer;
 
+  .head {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .userInformationContainer {
     margin-top: 1rem;
     width: 100%;

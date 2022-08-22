@@ -2,4 +2,16 @@
 
 .container {
   @include viewContainer;
+  display: flex;
+  flex-direction: column;
+
+  & > button {
+    align-self: flex-end;
+  }
+
+  .userListContainer {
+    & > div {
+      margin: 1rem 0;
+    }
+  }
 }

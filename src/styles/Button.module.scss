@@ -16,17 +16,32 @@
 .buttonLarge {
   height: 2.5rem;
   padding: 0 1rem;
+  transition: all 0.1s;
 
   &:hover {
     background: $grey-100;
+    transition: all 0.1s;
   }
 }
 
 .buttonSmall {
   height: 2rem;
   padding: 0 0.75rem;
+  transition: all 0.1s;
 
   &:hover {
     background: $grey-100;
+    transition: all 0.1s;
+  }
+}
+
+.signal {
+  background: $signal-color-100;
+  color: $white-100;
+  transition: all 0.1s;
+
+  &:hover {
+    background: $signal-color-200;
+    transition: all 0.1s;
   }
 }
