@@ -8,6 +8,8 @@ export const Button = ({
   type = "S",
   signal = false,
   text,
+  center = false,
+  cta,
 }: IButtonProps) => {
   const buttonSwitch = (
     children: JSX.Element | string | undefined,
@@ -15,11 +17,11 @@ export const Button = ({
     signal: boolean,
     text: string
   ) => {
-    console.log(signal);
     switch (type) {
       case "L":
         return (
           <button
+            onClick={cta}
             className={`${styles.buttonBase} ${styles.buttonLarge} ${
               signal ? styles.signal : ""
             }`}
@@ -27,12 +29,15 @@ export const Button = ({
             {children && (
               <div className={styles.buttonChildren}>{children}</div>
             )}
-            <Headline type="h2">{text}</Headline>
+            <Headline type="h2" center={center}>
+              {text}
+            </Headline>
           </button>
         );
       case "S":
         return (
           <button
+            onClick={cta}
             className={`${styles.buttonBase} ${styles.buttonSmall} ${
               signal ? "signal" : ""
             }`}
@@ -40,12 +45,15 @@ export const Button = ({
             {children && (
               <div className={styles.buttonChildren}>{children}</div>
             )}
-            <Headline type="h3">{text}</Headline>
+            <Headline type="h3" center={center}>
+              {text}
+            </Headline>
           </button>
         );
       default:
         return (
           <button
+            onClick={cta}
             className={`${styles.buttonBase} ${styles.buttonSmall} ${
               signal ? "signal" : ""
             }`}
@@ -53,7 +61,9 @@ export const Button = ({
             {children && (
               <div className={styles.buttonChildren}>{children}</div>
             )}
-            <Headline type="h3">{text}</Headline>
+            <Headline type="h3" center>
+              {text}
+            </Headline>
           </button>
         );
     }
