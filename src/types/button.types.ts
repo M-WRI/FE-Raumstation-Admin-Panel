@@ -3,4 +3,6 @@ export interface IButtonProps {
   signal?: boolean;
   type: string;
   text: string;
+  center?: boolean;
+  cta?: () => void;
 }
